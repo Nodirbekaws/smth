@@ -33,7 +33,6 @@ jobs:
         uses: aws-actions/configure-aws-credentials@v5
         with:
           role-to-assume: arn:aws:iam::980819806741:role/github-actions-react-deploy
-          aws-region: us-east-1
 
       - name: Check AWS identity
         run: aws sts get-caller-identity
